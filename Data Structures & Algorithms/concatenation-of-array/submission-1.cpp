@@ -1,0 +1,16 @@
+class Solution {
+public:
+    vector<int> getConcatenation(vector<int>& nums) {
+        vector<int> ans;
+
+        for (auto it = nums.begin(); it != nums.end(); ++it) {
+            ans.push_back(*it);
+        }
+
+        for (auto it  = nums.begin(); it != nums.end(); ++it) {
+            ans.push_back(*it);
+        }
+
+        return ans;
+    }
+};
